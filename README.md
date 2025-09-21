@@ -40,7 +40,7 @@ Commands marked with `*` need fixing, so note that they might not be working cor
 | `B`*        | Push a random byte                                            |
 | `[`         | Jump past the matching `]` if last value is 0                 |
 | `]`         | Jump back to the matching `[` if last value is 1              |
-| `?`         | If the popped value in non-zero, skip *value next to it* times|
+| `?`         | Pops a number off the stack and skips as many values next to it as the number |
 | `=`         | Set the IP position to the value next to it (GOTO)            |
 | `W`         | Set the IP position to 0 (repeat the program)                 |
 
