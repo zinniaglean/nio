@@ -122,6 +122,13 @@ Take one down and pass it around, "O
 ]
 ```
 
-## Other variations
+## Credits
+**notherone**: Creating the original esolang
+**JJRubes**: Creating the tokenizer
+**olus2000**: Proving Turing-completeness
+**IMMATERIAL_GIRL**: Fixing bugs
+**Zinnia Glean**: Rebooting the esolang
+
+## See also
 
 [nori.io++ (noripp)](https://github.com/MoshiKoi/noripp) by MoshiKoi
