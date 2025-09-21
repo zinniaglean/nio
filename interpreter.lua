@@ -16,6 +16,8 @@ function interpreter.interpret(code)
   local token = token_list[tp]
   local variables = {}
 
+ math.randomseed(os.time())
+  
   ------------------------
   -- Interpret the code --
   ------------------------
@@ -114,7 +116,7 @@ function interpreter.interpret(code)
       Stack:push(math.floor(Stack:pop()))
 
     elseif token.name == "r" then
-      Stack:push(math.random())
+      Stack:push(math.floor(math.random() * 10000000000))
 
     elseif token.name == "b" then
       Stack:push(math.random(0, 1))
