@@ -23,4 +23,4 @@ interpreter.interpret(code)
 print()
 code_file:close()
 
--- 🏳️‍⚧️ kys transphobes <3 --
+-- TODO: Add Debug Arguments --
