@@ -1,11 +1,8 @@
-| Hello! Please don't open pull requests on this repo, but rather open them for [nori.ni](https://github.com/mkukiro/nori.ni), I really appreciate pull requests! <img src="https://nukocities.neocities.org/nuko/react/cat23.gif"> |
-| - |
+<img align="right" height="50" src="https://files.catbox.moe/xmhkuz.svg">
 
-<img align="right" height="145" src="https://github.com/mkukiro/mkukiro/raw/main/noriioicon.svg">
+# Nio
 
-# nori.io
-
-nori.io is a Turing Complete stack-based esolang named after a stray cat I found!
+Nio is a reboot of the Turing Complete stack-based esoteric programming language "nori.io" by "notherone"
 
 The interpreter reads the program left-to-right, character per character, and always moves right.
 
@@ -29,13 +26,13 @@ The interpreter ignores every other character than these, making them no-op.
 | `@`         | Swap the last two values                                      |
 | `$`         | Reverse the whole stack                                       |
 | `:`         | Duplicate the top value                                       |
-| `+`         | Add last two values together, leaving only the result         |
-| `-`         | Subtract last two values together, leaving only the result    |
-| `*`         | Multiply last two values together, leaving only the result    |
-| `/`         | Divide last two values together, leaving only the result      |
-| `^`         | Raise last two values together, leaving only the result       |
-| `z`         | Square root the last value, leaving only the result           |
-| `%`         | Modulo last two values together, leaving only the result      |
+| `+`         | Add last two values together                                  |
+| `-`         | Subtract last two values together                             |
+| `*`         | Multiply last two values together                             |
+| `/`         | Divide last two values together                               |
+| `^`         | Raise last two values together                                |
+| `z`         | Square root the last value                                    |
+| `%`         | Modulo last two values together                               |
 | `c`         | Ceil the last number                                          |
 | `f`         | Floor the last number                                         |
 | `r`         | Push a random number                                          |
@@ -47,32 +44,15 @@ The interpreter ignores every other character than these, making them no-op.
 | `=`         | Set the IP position to the value next to it (GOTO)            |
 | `W`         | Set the IP position to 0 (repeat the program)                 |
 
-nori.io arithmetic is NOS × TOS, meaning that `>3>2*`, for example, will duplicate 3 (2nd value) by 2 (last value).
+Nio arithmetic is in NOS × TOS order.
 
-### Strings
+Every mathematical operation pops the operands.
 
-You can define strings using `""`, for example, `>"Hi"O` pushes the string *Hi* and then outputs it.
+### Non-vanilla features
 
-### Comments
-
-You can even define comments in nori.io using the following syntax: `~~ comment ~~`
-
-Strings in nori.io are the same as Lua strings, so they might have weird behavior
-
-### Varibles
-
-You can define variables in nori.io, `|variable|"string"` is an example.
-
-```nio
-|str|"str"
-|int|1024
-|flt|f5.1
-|stk|<      ~~ This sets the variable to the popped value ~~
-```
+You can define strings with the syntax `""` and variables with the syntax `|<name>|<value>`.
 
 ## Example programs
-
-Here are some example programs! There are a lot of them (send help they spawn every single nanosecond I breathe)
 
 ### Cat program
 
@@ -105,7 +85,7 @@ Here are some example programs! There are a lot of them (send help they spawn ev
 >"Height: "O N*O
 ```
 
-### Generate random bytes over and over
+### Continuously generate random bytes
 
 ```BOW```
 
@@ -146,6 +126,4 @@ Take one down and pass it around, "O
 
 ## Other variations
 
-[nori.io legacy](https://scratch.mit.edu/projects/819125582/)
-
-[nori.io++ (unofficial)](https://github.com/MoshiKoi/noripp)
+[nori.io++ (noripp)](https://github.com/MoshiKoi/noripp) by MoshiKoi
