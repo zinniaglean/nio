@@ -1,12 +1,14 @@
 # Nio
 
-Nio is a reboot of the Turing Complete stack-based esoteric programming language "nori.io" by "notherone"
+Nio is a reboot of the Turing Complete stack-based esoteric programming language "nori.io" by "notherone".
 
 The interpreter reads the program left-to-right, character per character, and always moves right.
 
 ## Commands
 
 The interpreter ignores every other character than these, making them no-op.
+
+Commands marked with `*` need fixing, so note that they might not be working correctly.
 
 ### Main commands
 
@@ -34,8 +36,8 @@ The interpreter ignores every other character than these, making them no-op.
 | `c`         | Ceil the last number                                          |
 | `f`         | Floor the last number                                         |
 | `r`         | Push a random number                                          |
-| `b`         | Push a random bit (either 0 or 1)                             |
-| `B`         | Push a random byte                                            |
+| `b`*        | Push a random bit (either 0 or 1)                             |
+| `B`*        | Push a random byte                                            |
 | `[`         | Jump past the matching `]` if last value is 0                 |
 | `]`         | Jump back to the matching `[` if last value is 1              |
 | `?`         | If the popped value in non-zero, skip *value next to it* times|
@@ -126,7 +128,7 @@ Take one down and pass it around, "O
 **notherone**: Creating the original esolang<br>
 **JJRubes**: Creating the tokenizer<br>
 **olus2000**: Proving Turing-completeness<br>
-**IMMATERIAL_GIRL**: Fixing bugs<br>
+**alphie_xen**: Fixing bugs<br>
 **Zinnia Glean**: Rebooting the esolang<br>
 
 ## See also
