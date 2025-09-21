@@ -123,11 +123,11 @@ Take one down and pass it around, "O
 ```
 
 ## Credits
-**notherone**: Creating the original esolang
-**JJRubes**: Creating the tokenizer
-**olus2000**: Proving Turing-completeness
-**IMMATERIAL_GIRL**: Fixing bugs
-**Zinnia Glean**: Rebooting the esolang
+**notherone**: Creating the original esolang<br>
+**JJRubes**: Creating the tokenizer<br>
+**olus2000**: Proving Turing-completeness<br>
+**IMMATERIAL_GIRL**: Fixing bugs<br>
+**Zinnia Glean**: Rebooting the esolang<br>
 
 ## See also
 
