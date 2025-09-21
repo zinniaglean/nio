@@ -1,5 +1,3 @@
-<img align="right" height="50" src="https://files.catbox.moe/xmhkuz.svg">
-
 # Nio
 
 Nio is a reboot of the Turing Complete stack-based esoteric programming language "nori.io" by "notherone"
