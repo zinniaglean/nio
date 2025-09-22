@@ -1,5 +1,9 @@
 interpreter = require("interpreter")
 
+-- terrible trick to make tests deterministic
+math.randomseed(8008135)
+math.randomseed = function(num) end
+
 function runCode(code, start_stack, expected_stack)
     interpreter.Stack.Stack = start_stack
     interpreter.interpret(code)
@@ -64,6 +68,9 @@ runTest("$", {"test", 73, true}, {true, 73, "test"}, "Reverse various elements")
 
 runTest("|test|'hi'>|test|", {}, {"hi"}, "Set then push a variable")
 runTest(">100|test|<>|test|", {}, {100}, "Set a variable by popping from the stack")
+
+-- `B`
+runTest("B", {}, {185}, "Test random byte")
 
 print()
 
