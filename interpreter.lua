@@ -16,7 +16,7 @@ function interpreter.interpret(code)
   local token = token_list[tp]
   local variables = {}
 
- math.randomseed(os.time())
+  math.randomseed(os.time())
   
   ------------------------
   -- Interpret the code --
@@ -122,13 +122,7 @@ function interpreter.interpret(code)
       Stack:push(math.random(0, 1))
 
     elseif token.name == "B" then
-      local byte_str = ""
-
-      for i = 1, 8 do
-        byte_str = byte_str .. tostring(math.random(0, 1))
-      end
-      
-      Stack:push(byte_str)
+      Stack:push(math.random(0, 2^8 - 1))
     
     elseif token.name == "@" then
       local x = Stack:pop()
