@@ -8,8 +8,6 @@ The interpreter reads the program left-to-right, character per character, and al
 
 The interpreter ignores every other character than these, making them no-op.
 
-Commands marked with `*` need fixing, so note that they might not be working correctly.
-
 ### Main commands
 
 | Command     | Description                                                   |
