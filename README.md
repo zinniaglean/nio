@@ -1,4 +1,4 @@
-# Nio
+# Nio (Beta)
 
 Nio is a reboot of the Turing Complete stack-based esoteric programming language "nori.io" by "notherone".
 
@@ -36,8 +36,8 @@ Commands marked with `*` need fixing, so note that they might not be working cor
 | `c`         | Ceil the last number                                          |
 | `f`         | Floor the last number                                         |
 | `r`         | Push a random number                                          |
-| `b`*        | Push a random bit (either 0 or 1)                             |
-| `B`*        | Push a random byte                                            |
+| `b`         | Push a random bit (either 0 or 1)                             |
+| `B`         | Push a random byte                                            |
 | `[`         | Jump past the matching `]` if last value is 0                 |
 | `]`         | Jump back to the matching `[` if last value is 1              |
 | `?`         | Pops a number off the stack and skips as many values next to it as the number |
