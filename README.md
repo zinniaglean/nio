@@ -48,7 +48,7 @@ Every mathematical operation pops the operands.
 
 ### Non-vanilla features
 
-You can define strings with the syntax `""`, comments with `~~ ~~` and variables with the syntax `|<name>|<value>`.
+You can define strings with the syntax `""`, comments with `~~ ~~`, and variables with the syntax `|<name>|<value>`.
 
 ## Example programs
 
